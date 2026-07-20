@@ -1,0 +1,24 @@
+generated: '2026-07-19'
+method: searched
+source: https://www.hackerrank.com/work/apidocs
+notes: >-
+  No OpenAPI is published, so this profile is derived from the public HackerRank for Work API
+  documentation and a live probe. GET https://www.hackerrank.com/x/api/v3/tests returns HTTP 401
+  Unauthorized without credentials, confirming the API is token-gated. HackerRank for Work issues a
+  per-account API key (generated in account settings) that is sent as an HTTP Bearer token.
+summary:
+  types:
+  - http
+  http_schemes:
+  - bearer
+  api_key_in: []
+  oauth2_flows: []
+schemes:
+- name: bearerAuth
+  type: http
+  scheme: bearer
+  description: >-
+    Per-account API key sent as an Authorization Bearer token. Generated in the HackerRank for Work
+    account settings and passed as `Authorization: Bearer <API_KEY>`.
+  sources:
+  - https://www.hackerrank.com/work/apidocs
