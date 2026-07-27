@@ -1,0 +1,8 @@
+generated: '2026-07-19'
+method: searched
+host: https://www.hackerrank.com
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404

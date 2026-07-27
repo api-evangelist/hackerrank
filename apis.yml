@@ -1,24 +1,99 @@
 aid: hackerrank
 name: HackerRank
-description: HackerRank is a company surfaced as a portfolio company of battery-ventures, y-combinator
-  and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the
-  enrichment pipeline.
+description: >-
+  HackerRank is a developer skills platform used by companies to screen, interview, and upskill
+  technical talent, and by more than 26 million developers to practice coding and earn skill
+  certifications. Its products include Screen (automated coding assessments), Interview (collaborative
+  real-time coding interviews), Engage (technical hiring events and hackathons), and SkillUp. HackerRank
+  for Work exposes a public REST API (v3) so customers can programmatically manage tests, candidates,
+  questions, interviews, and results, and integrate assessments into their own applicant-tracking and
+  hiring workflows. This API Evangelist profile catalogs HackerRank's developer surface and the
+  enrichment artifacts derived from it.
 url: https://raw.githubusercontent.com/api-evangelist/hackerrank/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - battery-ventures
 - y-combinator
-x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier: profile
+x-tier-reason: has-public-api
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
+image: https://www.hackerrank.com/wp-content/uploads/2018/08/hackerrank_logo.png
 tags:
 - Company
-apis: []
+- Developer Skills
+- Technical Hiring
+- Coding Assessment
+- Recruiting
+- Interviewing
+- Education
+- Developer Tools
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+apis:
+- name: HackerRank for Work API
+  description: >-
+    REST API (v3) for HackerRank for Work. Lets customers programmatically manage tests, candidates,
+    questions, interviews, and results, and integrate coding assessments into their own hiring and
+    applicant-tracking workflows. Authenticated with a per-account bearer API key.
+  humanURL: https://www.hackerrank.com/work/apidocs
+  baseURL: https://www.hackerrank.com/x/api/v3
+  tags:
+  - Coding Assessment
+  - Technical Hiring
+  - Candidates
+  - Tests
+  properties:
+  - type: APIReference
+    url: https://www.hackerrank.com/work/apidocs
+  - type: Authentication
+    url: authentication/hackerrank-authentication.yml
+common:
+- type: DeveloperPortal
+  url: https://www.hackerrank.com/work/apidocs
+- type: Documentation
+  url: https://support.hackerrank.com/hc/en-us
+- type: APIReference
+  url: https://www.hackerrank.com/work/apidocs
+- type: Support
+  url: https://support.hackerrank.com/hc/en-us
+- type: Blog
+  url: https://www.hackerrank.com/blog/
+- type: Pricing
+  url: https://www.hackerrank.com/pricing/
+- type: SignUp
+  url: https://www.hackerrank.com/get-started
+- type: Login
+  url: https://www.hackerrank.com/access-account
+- type: TermsOfService
+  url: https://www.hackerrank.com/about-us/terms-of-service
+- type: PrivacyPolicy
+  url: https://www.hackerrank.com/about-us/privacy
+- type: Authentication
+  url: authentication/hackerrank-authentication.yml
+- type: WellKnown
+  url: well-known/hackerrank-well-known.yml
+- type: DomainSecurity
+  url: security/hackerrank-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
