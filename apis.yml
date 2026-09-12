@@ -78,6 +78,8 @@ apis:
   - type: Authentication
     url: authentication/hackerrank-authentication.yml
 common:
+- type: Website
+  url: https://www.hackerrank.com/
 - type: DeveloperPortal
   url: https://www.hackerrank.com/work/apidocs
 - type: Documentation
