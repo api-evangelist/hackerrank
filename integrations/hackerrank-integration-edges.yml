@@ -2,6 +2,8 @@ generated: '2026-10-14'
 method: searched
 checked:
 - https://marketplace.atlassian.com/
+- okta/integrations/okta-integration-edges.yml
+- workday/integrations/workday-integration-edges.yml
 marketplace_apps: []
 edges:
 - partner_name: Atlassian Marketplace
@@ -19,5 +21,52 @@ edges:
   publisher_name: HackerRank Labs
   detected_by: sweep-devtools.py
   detected: '2026-10-14'
+- partner_name: Okta (own)
+  partner: okta
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://www.okta.com/integrations/hackerrank/
+  mirror_of: okta/integrations/okta-integration-edges.yml
+  apps:
+  - HackerRank For Work
+  listing_count: 1
+  detected: '2026-10-14'
+  detected_by: mirror-platform-listings.py
+  category: Single Sign-On
+  badges:
+  - OKTA_VERIFIED
+  features:
+  - CREATE
+  - DEACTIVATE
+  - GROUP_LINKING
+  - GROUP_PUSH
+  - IDENTITY_SECURITY_POSTURE_MANAGEMENT
+  - SAML
+  - SWA
+  - UPDATE
+- partner_name: Workday (own)
+  partner: workday
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://marketplace.workday.com/apps/414921/hackerrank-technical-skills-assessments
+  mirror_of: workday/integrations/workday-integration-edges.yml
+  apps:
+  - HackerRank Technical Skills Assessments
+  listing_count: 1
+  detected: '2026-10-14'
+  detected_by: mirror-platform-listings.py
+  category: Region & Country
+  badges:
+  - Workday Certified
 source:
 - https://marketplace.atlassian.com/

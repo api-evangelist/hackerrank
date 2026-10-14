@@ -15,3 +15,29 @@
   relationship: platform-app
   status: not-a-workflow
   arazzo: null
+- slug: hackerrank-okta-own
+  label: Okta (own)
+  partner: okta
+  partner_name: Okta (own)
+  category: Single Sign-On
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://www.okta.com/integrations/hackerrank/
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
+  arazzo: null
+- slug: hackerrank-workday-own
+  label: Workday (own)
+  partner: workday
+  partner_name: Workday (own)
+  category: Region & Country
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://marketplace.workday.com/apps/414921/hackerrank-technical-skills-assessments
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
+  arazzo: null
